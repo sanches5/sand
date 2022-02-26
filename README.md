@@ -1,1 +1,5 @@
 # sand
+
+#start
+
+ng serve
