@@ -11,9 +11,7 @@ export class SignInComponent implements OnInit {
   profileForm = new FormGroup({
     login: new FormControl(''),
     password: new FormControl(''),
-    isRememberMe: new FormControl(false)
   });
-  isRememberMe = false
 
   constructor() {
   }
@@ -32,9 +30,5 @@ export class SignInComponent implements OnInit {
 
   changeFieldPassword($event:any) {
 
-  }
-
-  changeRememberMe() {
-    this.isRememberMe = !this.isRememberMe
   }
 }

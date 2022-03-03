@@ -16,8 +16,3 @@ input {
   border: 1px solid cornflowerblue;
   outline: none;
 }
-
-.rememberMe {
-  display: flex;
-  gap: 5px;
-}

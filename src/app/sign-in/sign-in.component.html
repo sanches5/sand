@@ -6,11 +6,6 @@
     <label for="password">Password:</label>
     <input placeholder="password" id="password" type="text" formControlName="password"
            (ngModelChange)="changeFieldPassword($event)">
-    <div class="rememberMe">
-      <label for="remember">remember me</label>
-      <input (change)="changeRememberMe()" [value]="isRememberMe" id="remember" type="checkbox">
-    </div>
     <button>Sign in</button>
-
   </div>
 </form>
