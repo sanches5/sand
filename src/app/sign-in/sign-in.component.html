@@ -1,0 +1,11 @@
+<form [formGroup]="profileForm">
+  <div class="sign-in__form">
+    <label for="login">Login: </label>
+    <input id="login" type="text" placeholder="login" formControlName="login"
+           (ngModelChange)="changeFieldLogin($event)">
+    <label for="password">Password:</label>
+    <input placeholder="password" id="password" type="text" formControlName="password"
+           (ngModelChange)="changeFieldPassword($event)">
+    <button>Sign in</button>
+  </div>
+</form>
