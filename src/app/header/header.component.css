@@ -1,0 +1,8 @@
+.headerLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.headerLinks > li {
+  list-style-type: none
+}
