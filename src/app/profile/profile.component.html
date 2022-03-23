@@ -1,0 +1,31 @@
+<div class="container-profile">
+  <div class="container-avatar">
+    <img class="avatar" [src]=image alt="">
+    <p class="name">Aleksey Alekseev Alekseevich</p>
+    <p class="status-creator">Awesome creator! <img src="assets/icons/star.svg" alt=""/></p>
+    <div class="container-followers">
+      <span><img src="assets/icons/person.svg" alt="">1.2M</span>
+      <span><img src="assets/icons/cards.svg" alt="">100</span>
+      <button class="btn_follow">Follow+</button>
+    </div>
+  </div>
+
+  <div class="container-nav">
+    <custom-input placeholder="search in the post..."></custom-input>
+    <ul class="nav">
+      <li class="nav__current-nav">All</li>
+      <li>Favorite</li>
+      <li>Popular</li>
+    </ul>
+  </div>
+
+  <div class="container-content">
+    <div class="ads">
+      <div class="ad"></div>
+      <div class="ad"></div>
+    </div>
+    <post class="posts" [images]="images" [name]="someName"></post>
+    <div class="info">info</div>
+  </div>
+</div>
+

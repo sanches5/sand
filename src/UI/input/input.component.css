@@ -1,0 +1,19 @@
+input {
+  all: unset;
+  border-radius: 5px;
+  padding: 12px 20px;
+  color: white;
+  min-width: 360px;
+  text-align: start;
+}
+
+input {
+  background: #878792 url('../../assets/icons/search.svg') no-repeat;
+  background-position-x: 96%;
+  background-position-y: 11px;
+}
+
+input::placeholder {
+  color: #B8B8B8;
+  text-align: left;
+}
