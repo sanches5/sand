@@ -6,3 +6,7 @@
 .headerLinks > li {
   list-style-type: none
 }
+
+.headerLinks > li > a {
+  color: #98caff;
+}

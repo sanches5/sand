@@ -1,0 +1,20 @@
+<div class="container-post">
+  <div class="title-and-date">
+    <p class="title">{{title || 'Title'}}</p>
+    <p class="date">{{date || 'date of publish'}}</p>
+  </div>
+
+  <div class="container-images">
+    <img class="images-{{classImage}}" *ngFor="let image of images" alt="/" src={{image.src}}>
+  </div>
+  <p class="description">{{descriptionPost || 'description is empty'}}</p>
+  <div class="people-and-icons">
+    <p class="helpers">with the post helped <span> {{currentHelpers || '0'}} people </span></p>
+    <div class="container-icons">
+      <img src="assets/icons/send.svg" alt="">
+      <img src="assets/icons/delete.svg" alt="">
+      <img src="assets/icons/edit.svg" alt="">
+    </div>
+  </div>
+</div>
+

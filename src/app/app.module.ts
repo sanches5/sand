@@ -7,6 +7,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {SignInComponent} from './sign-in/sign-in.component';
+import { ProfileComponent } from './profile/profile.component';
+import { PostComponent } from './profile/post/post.component';
+import { InputComponent } from '../UI/input/input.component';
 
 @NgModule({
   imports: [
@@ -15,6 +18,7 @@ import {SignInComponent} from './sign-in/sign-in.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       {path: 'signIn', component: SignInComponent},
+      {path: 'profile', component: ProfileComponent},
     ]),
     FormsModule
   ],
@@ -22,6 +26,9 @@ import {SignInComponent} from './sign-in/sign-in.component';
     AppComponent,
     HeaderComponent,
     SignInComponent,
+    ProfileComponent,
+    PostComponent,
+    InputComponent,
   ],
   bootstrap: [
     AppComponent
