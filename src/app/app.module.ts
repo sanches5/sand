@@ -5,8 +5,9 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import {AppComponent} from './app.component';
-import {HeaderComponent} from './header/header.component';
-import {SignInComponent} from './sign-in/sign-in.component';
+import {HeaderComponent} from './components/header/header.component';
+import {SignInComponent} from './pages/sign-in/sign-in.component';
+import {SignUpComponent} from './pages/sign-up/sign-up.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import {SignInComponent} from './sign-in/sign-in.component';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      {path: 'signIn', component: SignInComponent},
+      {path: 'sign-in', component: SignInComponent},
+      {path: 'sign-up', component: SignUpComponent},
     ]),
     FormsModule
   ],
@@ -22,6 +24,7 @@ import {SignInComponent} from './sign-in/sign-in.component';
     AppComponent,
     HeaderComponent,
     SignInComponent,
+    SignUpComponent,
   ],
   bootstrap: [
     AppComponent
